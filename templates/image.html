@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Image Steganography</title></head>
+<body style="text-align:center; padding:50px;">
+    <h2>🖼️ Hide Message in Image</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required><br><br>
+        <textarea name="secret_text" rows="4" cols="50" placeholder="Enter secret message" required></textarea><br><br>
+        <input type="submit" value="Encode">
+    </form>
+    <hr>
+    <h2>🔍 Decode Message from Image</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="decode_image" required>
+        <input type="submit" value="Decode">
+    </form>
+    {% if message %}<p><strong>Decoded:</strong> {{ message }}</p>{% endif %}
+</body>
+</html>
