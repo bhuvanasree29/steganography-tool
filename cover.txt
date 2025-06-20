@@ -1,0 +1,4 @@
+Steganography is the practice of hiding messages.
+It can be done using images, audio, or even text.
+Whitespace characters are often used for this purpose.
+This text will be used to hide a secret message.
